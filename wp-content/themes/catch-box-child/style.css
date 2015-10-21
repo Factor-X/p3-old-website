@@ -1,0 +1,258 @@
+/*
+Theme Name: Catch Box Child
+Theme URI: http://catchthemes.com/themes/catchbox
+Author: Catch Themes Team
+Author URI: http://catchthemes.com
+Template: catch-box
+Description: Catch Box is simple, lightweight, box shaped, and adaptable WordPress Theme for bloggers and professionals. It is based on HTML5, CSS3 and Responsive Web Design to view in various devices. 10 Best Reasons to use Catch Box Theme. 1. Responsive Web Design, 2. Custom Menus (Primary, Secondary and Footer menus), 3. Theme Options for light or dark or blue color scheme, custom link colors, three layout choices, two content choices between excerpt and content option in homepage, feed redirection, custom css styles, 4. Featured Sliders where you can define number of slides and post IDs, 5. Social Links (Facebook, Twitter, RSS, Linkedin, Pinterest, etc), 6. Webmaster Tools (Google, Yahoo and Bing site verification ID, Header and Footer codes), 7. Custom Backgrounds, 8. Custom Header, 9. Catchbox Adspace widget to add any type of Advertisements, and 10. Support popular plugins. Multilingual Ready (WPML) and also currently translated in Brazilian Portuguese, Spanish, Danish, Germany, French, Polish, Czech, Croatian, Italian, Swedish, Russian, Arabic, and Serbian. Free Support Forum at http://catchthemes.com/support-forum/forum/catch-box-public/
+Version: 2.5
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: dark, light, blue, white, black, gray, one-column, two-columns, left-sidebar, right-sidebar, fixed-width, flexible-width, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+*/
+
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+
+@import url("../catch-box/style.css");
+/* =Structure
+----------------------------------------------- */
+
+#access div, 
+#access-secondary div,
+#access-footer div {
+	margin: 0;
+}
+#menu_line {
+	background-color: #e54b0e;
+	height: 10px;
+}
+
+#header-content {
+    margin: 0 3%;
+    padding: 1.5em 0;
+	position: relative;
+}
+
+
+/* One column */
+.content-onecolumn #page {
+	max-width: 900px;
+}
+
+/* =Global
+----------------------------------------------- */
+
+body {
+	background: #efeee8;
+}
+#page {
+	background: #eee;
+	-moz-border-radius: 0;
+    border-radius: 0;
+}
+
+/* Forms */
+input[type=text],
+input[type=password],
+textarea {
+	background: #fafafa;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: 1px solid #61605b;
+	color: #61605b;
+}
+
+input#s {
+	background-color: #dbd9d2;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	font-size: 12px;
+	height: 18px;
+	line-height: normal;
+	padding: 4px 10px 4px 28px;
+}
+
+/* =Header
+----------------------------------------------- */
+
+#branding {
+	background-color: #dbd9d2;
+	padding-bottom: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+#site-title {
+	margin-right: 270px;
+	padding: 0;
+	font-size: 18px;
+}
+#site-description {
+	margin: 0 270px 0 0;
+}
+#site-logo {
+	display: block;
+	line-height: 0;
+}
+#branding #site-logo img { margin: 0 }
+
+/* =Menu
+-------------------------------------------------------------- */
+
+#branding #access,
+#colophon #access-footer {
+	border-top: 1px solid #61605B;
+	background: #3c3a37; /* Show a solid color for older browsers */
+	clear: both;
+	margin: 0 auto;
+}
+#branding ul.menu, 
+#colophon #access-footer ul.menu {
+	margin: 0;
+}
+#branding ul.menu li {
+	background-color: #3c3a37;
+	border-left: 1px solid #3C3A37;
+	font-weight: bold;
+}
+#branding ul.menu a,
+#colophon #access-footer ul.menu a {
+	color: #9b998f;
+	line-height: 2em;
+	padding: 0 0.8125em;
+}
+#branding ul.menu ul {
+	top: auto;
+}
+
+#branding ul.menu a {
+	display: block;
+}
+
+#branding ul.menu li:hover > a,
+#branding ul.menu ul :hover > a,
+#branding ul.menu a:focus {
+	background: #ffffff; /* hover background color*/
+}
+#branding ul.menu li:hover > a,
+#branding ul.menu a:focus,
+#colophon #access-footer ul.menu a:hover,
+#colophon #access-footer ul.menu a:focus {
+	background: #ffffff; /* Show a solid color for older browsers */
+	color: #e54b0e;
+}
+
+#branding .menu .current-menu-item > a,
+#branding .menu .current-menu-ancestor > a,
+#branding .menu .current_page_item > a,
+#branding .menu .current_page_ancestor > a,
+#colophon .menu .current-menu-item a {
+	color: #efeee8;
+	background-color: #e54b0e;
+	border-bottom: 1px solid #e54b0e;
+}
+
+/* =Search Form
+----------------------------------------------- */
+
+#branding #searchform {
+	top: 2.8em;
+	right: 0;
+}
+
+/* =Content
+----------------------------------------------- */
+
+#main {
+	background-color: #efeee8;
+	padding: 0;
+}
+
+ 
+.hentry, 
+.no-results,
+#author-info,
+#disqus_thread,
+#content .error404 {
+	background-color: transparent;
+	border-bottom: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	padding: 0;
+}
+
+.entry-title,
+.entry-title a {
+	color: #e54b0e;
+}
+
+.entry-content table,
+.comment-content table {
+	border-bottom: 0;
+}
+.entry-content td,
+.comment-content td {
+	background-color: #DBD9D2;
+	border-top: 0;
+	padding: 3px 10px;
+}
+
+/* =Footer
+----------------------------------------------- */
+
+#colophon {
+	border-top: 0;
+}
+
+/* Site Generator Line */
+#site-generator {
+	background-color: #61605b;
+	border-top: 0;
+	border-bottom: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	line-height: normal;
+	color: #3c3b37;
+	padding: 1em 0.5em;
+}
+
+#site-generator a {
+	color: #3c3b37;
+}
+
+#site-generator .powered {
+	display: none;
+}
+
+#site-generator .copyright {
+	margin-left: 0;
+}
+
+
+/* =Responsive Structure
+----------------------------------------------- */
+/* Smaller than standard 1060 (devices and browsers) */
+
+@media screen and (max-width: 767px) {
+	#main,
+	#supplementary {
+		padding-top: 0;
+	}
+	#header-content {
+		padding: 5.30625em 0 2em 0;
+	}
+	#branding #s {
+		float: none;
+}
+	
+/* =Print
+----------------------------------------------- */
+
+	#branding hgroup {
+		margin: 0;
+	}
+	#menu_line {
+		background-color: #e54b0e;
+		height: 10px;
+	}
